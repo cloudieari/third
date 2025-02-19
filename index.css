@@ -1,0 +1,64 @@
+html, body {
+    height: 60%;
+    margin: 0;
+    padding: 0;
+    font-family: Garamond, serif;
+    background-image: url(BG2.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap; 
+    cursor: pointer;
+}
+
+.tablink {
+    width: 150px; 
+    height: 150px;
+    margin-right: 20px; 
+    margin-bottom: 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.tablink img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.tablink img:hover {
+    transform: scale(1.1);
+}
+
+.tablink span {
+    display: block;
+    margin-top: 5px; 
+    color: #dfa1b3; 
+    font-size: 14px; 
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    animation: fadeIn 2s ease-in-out;
+}
